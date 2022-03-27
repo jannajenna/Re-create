@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --c-background: #f2efea;
+  --c-accent: #923c23;
+  --c-grey: #636363;
+  --c-grey-light: #d9d9d9;
+  --c-white: #ffffff;
+}
+
+body {
+  background-color: var(--c-background);
+  margin: 3em;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--c-grey);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--c-grey);
+  font-weight: 600;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--c-grey);
+  font-style: italic;
+}
+
+.price1,
+.price2,
+.colorno,
+.stock1,
+.stock2 {
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+.price1::before {
+  content: "$";
+}
+/* Breadcrumbs */
+
+.breadnav {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding-top: 1rem;
+  column-gap: 1rem;
+  color: var(--c-accent);
+}
+
+.breadnav h3::after {
+  content: "-";
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  padding-left: 5px;
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+}
+
+li::after {
+  content: "/";
+  color: var(--color-1);
+  padding-left: 6px;
+}
+
+li:last-child::after {
+  content: "";
+}
+
+/* Cards */
+
+.cardswraper {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 4rem;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  margin: 1rem;
+  flex-direction: column;
+  background-color: var(--c-white);
+  padding: 1rem;
+}
+
+.bikename1 {
+  border-bottom: 1px solid var(--c-grey);
+  margin-bottom: 10px;
+}
+
+.bikespec {
+  padding: 1rem;
+  border: 1px solid var(--c-grey-light);
+}
+
+.price,
+.color,
+.stock {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  border-bottom: 1px solid var(--c-grey-light);
+  align-items: baseline;
+}
+
+/* Button */
+
+.bttn {
+  text-align: center;
+}
+
+.bttn1 {
+  margin-top: 10px;
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+  background-color: transparent;
+  border: 2px solid var(--c-accent);
+  color: var(--c-accent);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Color options */
+
+.hidden {
+  display: none;
+}
+
+.colorbox {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-items: baseline;
+}
+
+.colorblack,
+.colorcream,
+.colorred,
+.colorblue,
+.colorgreen {
+  width: 15px;
+  height: 15px;
+  background-color: aqua;
+}
+
+.colorblack {
+  background-color: #000000;
+}
+
+.colorcream {
+  background-color: #ffe4c4;
+}
+
+.colorred {
+  background-color: #a52a2a;
+}
+
+.colorblue {
+  background-color: #1e90ff;
+}
+.colorgreen {
+  background-color: #006400;
+}
